@@ -28,9 +28,9 @@ const map = function(array, callback) {
   return results;
 };
 
-let words = ["ground", "control", "to", "major", "tom"];
-const comp1 = [ 'g', 'c', 't', 'm', 't' ];
-const result1 = map(words, word => word[0]);
-assertArraysEqual(result1, comp1);
-assertArraysEqual(map(comp1, comp => comp + "'s"), ["g's", "c's", "t's", "m's", "t's"]);
-assertArraysEqual(map(words, word => word + " Up"), ["ground Up", "control Up", "to Up", "major Up", "tom Up"]);
+// let words = ["ground", "control", "to", "major", "tom"];
+// const comp1 = [ 'g', 'c', 't', 'm', 't' ];
+// const result1 = map(words, word => word[0]);
+// assertArraysEqual(result1, comp1);
+// assertArraysEqual(map(comp1, comp => comp + "'s"), ["g's", "c's", "t's", "m's", "t's"]);
+// assertArraysEqual(map(words, word => word + " Up"), ["ground Up", "control Up", "to Up", "major Up", "tom Up"]);
