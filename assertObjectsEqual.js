@@ -12,9 +12,9 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const eqObjects = function(object1, object2) {
-  objectLength = Object.keys(object1).length;
+  const objectLength = Object.keys(object1).length;
   //checking if the objects have the same number of keys.
-  if (objectLength === Object.keys(object2).length){
+  if (objectLength === Object.keys(object2).length) {
     let correctCount = 0;
     for (const key in object1) {
       if (Array.isArray(object1[key])) {
@@ -22,7 +22,7 @@ const eqObjects = function(object1, object2) {
           correctCount += 1;
         }
       }
-      if (object1[key] == object2[key]) {
+      if (object1[key] === object2[key]) {
         correctCount += 1;
       }
       if (correctCount === objectLength) {
@@ -41,4 +41,4 @@ const assertObjectsEqual = function(actual, expected) {
   if (!(eqObjects(actual, expected))) {
     console.log(`Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
-}
+};

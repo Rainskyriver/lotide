@@ -1,22 +1,22 @@
 const eqArrays = function(arr1, arr2) {
-  correctCount = 0;
+  let correctCount = 0;
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] === arr2[i]) {
       correctCount++;
     }
-    if (correctCount === arr1.length){
+    if (correctCount === arr1.length) {
       return true;
     }
-  } 
+  }
   return false;
 };
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log(`Assertion Passed: ${arr1} === ${arr2}`)
+    console.log(`Assertion Passed: ${arr1} === ${arr2}`);
   }
   if (!(eqArrays(arr1, arr2))) {
-    console.log(`Assertion Failed: ${arr1} !== ${arr2}`)
+    console.log(`Assertion Failed: ${arr1} !== ${arr2}`);
   }
 };
 
@@ -28,21 +28,21 @@ Scan each element of the first array by each element of the second array
   if you do find a duplicate, do not put it in the new return array
 */
 const without = function(arr, removeElements) {
-  let returnArray = []
+  let returnArray = [];
   let duplicates = 0;
   for (let i = 0; i < arr.length; i++) {
     duplicates = 0;
-    for(let x = 0; x < removeElements.length; x++) {
-      if(arr[i] === removeElements[x]) {
+    for (let x = 0; x < removeElements.length; x++) {
+      if (arr[i] === removeElements[x]) {
         duplicates = 1;
       }
     }
-    if(duplicates === 0){
+    if (duplicates === 0) {
       returnArray.push(arr[i]);
     }
   }
   console.log(returnArray);
-}
+};
 
 without([1, "2", "3"], [1, "2", 3]);
 const words = ["hello", "world", "lighthouse"];
