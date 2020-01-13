@@ -40,3 +40,7 @@ const eqObjects = function(object1, object2) {
   }
   return false;
 };
+
+const testObj1 = {a: [1,2], b: 5}
+const testObj2 = {a: [1,2], b: 5}
+console.log(eqObjects(testObj1, testObj2));
