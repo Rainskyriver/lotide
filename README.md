@@ -38,3 +38,5 @@ The following functions are currently implemented:
 * `map(array, function)`: returns an array that has the callback called on each element of the array.
 * `takeUntil(array, function)`: returns an array's elements until the callback function returns true.
 * `without(array, array)`: returns an array that has the paramater's elements removed.
+* `eqArray(array, array)`: returns true if the arrays are the same, and false if they are not.
+* `eqObjects(object, object)`: returns true if the objects are the same, and false if they are not.
