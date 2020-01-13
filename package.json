@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@rainskyriver/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of functions made for learning, based on the lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/Rainskyriver/lotide.git"
   },
-  "author": "",
+  "author": "Lian Yelich lianyelich14@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rainskyriver/lotide/issues"

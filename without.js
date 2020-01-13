@@ -12,6 +12,7 @@ const without = function(arr, removeElements) {
       returnArray.push(arr[i]);
     }
   }
+  return returnArray;
 };
 
 module.exports = without;
