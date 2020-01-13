@@ -1,5 +1,11 @@
-const assertEqual = require('../assertEqual.js')
 const head = require('../head.js')
+const assert = require('chai').assert;
 
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+describe("#Head", () => {
+  it("returns 5 when passed [5, 6, 7]", () => {
+    assert.strictEqual(head([5,6,7]), 5);
+  })
+  it("returns '5' when passed ['5']", () => {
+    assert.strictEqual(head(['5']), '5');
+  })
+})
